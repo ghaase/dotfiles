@@ -2,7 +2,7 @@
 
 # preset some variables
 SRCDIR=$(dirname $0)
-FILES=("zshrc" "vimrc" "gitconfig")
+FILES=("zshrc" "zsh/setup" "vimrc" "gitconfig")
 # oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
     echo "cloning oh-my-zsh"
