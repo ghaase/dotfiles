@@ -2,7 +2,7 @@
 
 # preset some variables
 SRCDIR=$(dirname $0)
-FILES=("zshrc" "zsh/setup" "vimrc" "gitconfig")
+FILES=("zshrc" "zsh" "vimrc" "gitconfig")
 # oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
     echo "cloning oh-my-zsh"
@@ -24,12 +24,12 @@ for FILE in ${FILES[@]}; do
         else
             #back up the old one
             echo "backing up $TARGET first"
-            cp $TARGET "$TARGET.bck"
+            cp -r $TARGET "$TARGET.bck"
         fi
     fi
     # copy file
     echo "copying $SOURCE to $TARGET"
-    cp $SOURCE $TARGET
+    cp -r $SOURCE $TARGET
 done
 
 echo "finsihed"
