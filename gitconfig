@@ -1,0 +1,8 @@
+[user]
+	name = Gregory Haase
+	email = greg@taximagic.com
+[sendemail]
+    smtpencryption = tls
+    smtpserver = smtp.gmail.com
+    smtpuser = greg@taximagic.com
+    smtpserverport = 587
